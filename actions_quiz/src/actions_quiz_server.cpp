@@ -81,7 +81,7 @@ public:
 int main(int argc, char **argv) {
   ros::init(argc, argv, "action_custom_msg_as");
 
-  TakeOffLandAction TakeOffLand("TakeOffLand");
+  TakeOffLandAction action_custom_msg_as("action_custom_msg_as");
 
   ros::spin();
 
