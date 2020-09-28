@@ -38,11 +38,7 @@ public:
     ros::Publisher takeoff = nh_.advertise<std_msgs::Empty>("drone/takeoff", 1);
     ros::Publisher land = nh_.advertise<std_msgs::Empty>("drone/land", 1);
 
-    // take off
     std_msgs::Empty blankMsg;
-    ros::Duration(1).sleep();
-    takeoff.publish(blankMsg);
-    ros::Duration(5).sleep();
 
     // start timer
     ros::Rate r(1);
@@ -74,7 +70,7 @@ public:
 
     if (success) {
 
-      ROS_INFO("%s: Succeeded", action_name_.c_str());
+      // ROS_INFO("%s: Succeeded", action_name_.c_str());
 
       // set the action state to succeeded
       action_custom_msg_as.setSucceeded();
@@ -83,7 +79,7 @@ public:
 };
 
 int main(int argc, char **argv) {
-  ros::init(argc, argv, "TakeOffLandNode");
+  ros::init(argc, argv, "action_custom_msg_as");
 
   TakeOffLandAction TakeOffLand("TakeOffLand");
 

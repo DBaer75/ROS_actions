@@ -1,4 +1,4 @@
 <launch>
-  <node pkg="actions_quiz" type="actions_quiz_server" name="TakeOffLandNode" output="screen">
+  <node pkg="actions_quiz" type="actions_quiz_server" name="action_custom_msg_as" output="screen">
   </node>
 </launch>
