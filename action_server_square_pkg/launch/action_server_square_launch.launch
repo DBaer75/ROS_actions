@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="action_server_square_pkg" type="action_server_square" name="SquareActionNode" output="screen">
+  </node>
+</launch>

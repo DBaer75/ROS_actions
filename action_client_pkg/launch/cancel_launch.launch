@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="action_client_pkg" type="cancel_goal_test" name="cancel_goal_test" output="screen">
+  </node>
+</launch>
